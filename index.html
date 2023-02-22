@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Презентация с теорией</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/serif.css" id="theme"/>
+</head>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/math/katex.js"></script>
+
+<script>
+    if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+</script>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <div style="display: flex;
+            max-width: 500px;
+            margin: auto;
+            align-items: center;
+            justify-content: center">
+                <lottie-player src="./cool_res/light.json" background="transparent" speed="1"
+                               style="width: 10%; margin-bottom: 5%" loop autoplay></lottie-player>
+                <h4 style="text-align: center">Кратко и просто</h4>
+                <lottie-player src="./cool_res/light.json" background="transparent" speed="1"
+                               style="width: 10%; margin-bottom: 5%" loop autoplay></lottie-player>
+            </div>
+            <h3 class="fragment">О схеме Горнера</h3>
+        </section>
+        <section>
+            <h3>Многочлен</h3>
+            <p>Мы будем говорить о крутом парне, который обозначается, как
+            <p class="fragment">$P_n(k)$</p> </p>
+        </section>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script>
+    Reveal.initialize({
+        transition: 'convex',
+        plugins: [RevealMath.KaTeX]
+    });
+</script>
+</body>
+</html>
